@@ -79,6 +79,26 @@ namespace RanorexMergeTest
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://www.ranorex.com' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("http://www.ranorex.com", "Chrome", "", false, false, false, false, false, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TestAutomationForGUITestingRanore.Text' at 73;6.", repo.TestAutomationForGUITestingRanore.TextInfo, new RecordItemIndex(1));
+            repo.TestAutomationForGUITestingRanore.Text.Click("73;6");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ranorex' with focus on 'TestAutomationForGUITestingRanore.Text'.", repo.TestAutomationForGUITestingRanore.TextInfo, new RecordItemIndex(2));
+            repo.TestAutomationForGUITestingRanore.Text.PressKeys("ranorex");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TestAutomationForGUITestingRanore.GlyphiconGlyphiconSearchGreenSearchIc' at 21;12.", repo.TestAutomationForGUITestingRanore.GlyphiconGlyphiconSearchGreenSearchIcInfo, new RecordItemIndex(3));
+            repo.TestAutomationForGUITestingRanore.GlyphiconGlyphiconSearchGreenSearchIc.Click("21;12");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TestAutomationForGUITestingRanore.WhyRanorexRanorexTestAutomation'.", repo.TestAutomationForGUITestingRanore.WhyRanorexRanorexTestAutomationInfo, new RecordItemIndex(4));
+            Validate.Exists(repo.TestAutomationForGUITestingRanore.WhyRanorexRanorexTestAutomationInfo);
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data
