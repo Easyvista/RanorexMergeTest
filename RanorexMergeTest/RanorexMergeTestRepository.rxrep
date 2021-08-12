@@ -124,9 +124,15 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="543f02ea-7b46-4e1d-899c-ffdc8054ebea"
 			name="WhyRanorexRanorexTestAutomation"
 			refimgid="e5b5298e-6068-4d6e-a9ed-f07bf9d5f7de"
-			refpath="/dom[@domain='www.ranorex.com']//div[#'rx-content']/main/div/div/div/ul/div/li[1]/h3/a[@innertext='Why Ranorex | Ranorex Test Automation']"
 			searchtimeout="30000ms">
-				/dom[@domain='www.ranorex.com']//div[#'rx-content']//ul/div/li[1]/h3/a[@innertext&gt;'Why Ranorex | Ranorex Test']
+				/dom[@domain='www.ranorex.com']//div[#'rx-content']//ul/div/li[1]/h3/a[@innertext&gt;'Why Ranorex']
+			</item>
+			<item
+			capname="spantag"
+			id="01ce080c-616d-49ce-8021-839b10c00ffd"
+			name="solutions"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//li[#'solutionMenuButton']/span[@innertext='SOLUTIONS']
 			</item>
 			<basepath>
 				/dom[@domain='www.ranorex.com']

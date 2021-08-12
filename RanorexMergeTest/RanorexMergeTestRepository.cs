@@ -165,6 +165,7 @@ namespace RanorexMergeTest
             RepoItemInfo _textInfo;
             RepoItemInfo _glyphiconglyphiconsearchgreensearchicInfo;
             RepoItemInfo _whyranorexranorextestautomationInfo;
+            RepoItemInfo _solutionsInfo;
 
             /// <summary>
             /// Creates a new TestAutomationForGUITestingRanore  folder.
@@ -174,7 +175,8 @@ namespace RanorexMergeTest
             {
                 _textInfo = new RepoItemInfo(this, "Text", ".//div[#'rx-header-fixed']/div//form[@action='https://www.ranorex.com/']/?/?/input[@type='text']", 30000, null, "2f86ba15-cb84-49ea-b927-23b848b49cf5");
                 _glyphiconglyphiconsearchgreensearchicInfo = new RepoItemInfo(this, "GlyphiconGlyphiconSearchGreenSearchIc", ".//div[#'rx-header-fixed']/div//form[@action='https://www.ranorex.com/']/div/span", 30000, null, "24fc2b4d-18bb-4403-b064-c2b507eee901");
-                _whyranorexranorextestautomationInfo = new RepoItemInfo(this, "WhyRanorexRanorexTestAutomation", ".//div[#'rx-content']//ul/div/li[1]/h3/a[@innertext>'Why Ranorex | Ranorex Test']", 30000, null, "543f02ea-7b46-4e1d-899c-ffdc8054ebea");
+                _whyranorexranorextestautomationInfo = new RepoItemInfo(this, "WhyRanorexRanorexTestAutomation", ".//div[#'rx-content']//ul/div/li[1]/h3/a[@innertext>'Why Ranorex']", 30000, null, "543f02ea-7b46-4e1d-899c-ffdc8054ebea");
+                _solutionsInfo = new RepoItemInfo(this, "solutions", ".//li[#'solutionMenuButton']/span[@innertext='SOLUTIONS']", 30000, null, "01ce080c-616d-49ce-8021-839b10c00ffd");
             }
 
             /// <summary>
@@ -270,6 +272,30 @@ namespace RanorexMergeTest
                 get
                 {
                     return _whyranorexranorextestautomationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The solutions item.
+            /// </summary>
+            [RepositoryItem("01ce080c-616d-49ce-8021-839b10c00ffd")]
+            public virtual Ranorex.SpanTag solutions
+            {
+                get
+                {
+                    return _solutionsInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The solutions item info.
+            /// </summary>
+            [RepositoryItemInfo("01ce080c-616d-49ce-8021-839b10c00ffd")]
+            public virtual RepoItemInfo solutionsInfo
+            {
+                get
+                {
+                    return _solutionsInfo;
                 }
             }
         }
