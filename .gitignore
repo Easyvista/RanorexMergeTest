@@ -1,3 +1,12 @@
-bin
-obj/**/*
-Reports/**/*
+**/bin
+**/obj/**/*
+**/Reports/**/*
+*.csproj.pref
+*.csproj.rxuser
+*.rxsln.pref
+*Repository.cs
+*.rximg
+RepositoryImages/
+*.nupkg
+**/packages/
+!**/packages/build
