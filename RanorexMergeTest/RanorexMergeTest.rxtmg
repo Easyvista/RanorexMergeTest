@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RanorexMergeTest"
+      id="c25845dd-1f3b-4ff0-9545-dc36c6a184dc"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RanorexMergeTest"
+      id="c25845dd-1f3b-4ff0-9545-dc36c6a184dc"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

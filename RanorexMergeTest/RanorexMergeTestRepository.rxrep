@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="RanorexMergeTestRepository"
+id="b4ccd902-c30f-4e67-8458-8b490da8622b">
+  <codegen
+  classname="RanorexMergeTestRepository"
+  namespace="RanorexMergeTest"/>
+  <rootfolder
+  name="Root"
+  id="32295630-aeeb-42cd-b32b-aef0c7664898"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
