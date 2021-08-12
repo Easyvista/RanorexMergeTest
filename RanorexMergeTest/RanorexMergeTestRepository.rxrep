@@ -124,9 +124,15 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="543f02ea-7b46-4e1d-899c-ffdc8054ebea"
 			name="WhyRanorexRanorexTestAutomation"
 			refimgid="e5b5298e-6068-4d6e-a9ed-f07bf9d5f7de"
-			refpath="/dom[@domain='www.ranorex.com']//div[#'rx-content']/main/div/div/div/ul/div/li[1]/h3/a[@innertext='Why Ranorex | Ranorex Test Automation']"
 			searchtimeout="30000ms">
-				/dom[@domain='www.ranorex.com']//div[#'rx-content']//ul/div/li[1]/h3/a[@innertext&gt;'Why Ranorex | Ranorex Test']
+				/dom[@domain='www.ranorex.com']//div[#'rx-content']/main/div//ul/div/li[2]/h3/a[@innertext&gt;'Become a Ranorex Certified']
+			</item>
+			<item
+			capname="atag"
+			id="eed8196b-a652-4471-b124-b03132753435"
+			name="pricing"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//li[#'webinarLink']/a[@innertext='PRICING']
 			</item>
 			<basepath>
 				/dom[@domain='www.ranorex.com']
